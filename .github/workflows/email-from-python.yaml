@@ -1,8 +1,9 @@
 name: email-from-python
 
 on:
-  schedule:
-    - cron: '*/15 * * * *' # runs every 15 min
+  push:
+     branches:
+        - '**'
 
 jobs:
   build:
